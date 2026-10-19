@@ -1,0 +1,27 @@
+NEXORA - dossier pret a deposer sur Netlify
+============================================
+
+Contenu :
+  index.html   l'application (version 3.5)
+  sw.js        cache hors ligne
+  img/         69 illustrations d'exercices
+
+Mise en ligne
+-------------
+1. Va sur app.netlify.com, ouvre ton site Nexora existant.
+2. Onglet Deploys, puis glisse-depose LE DOSSIER ENTIER (pas les fichiers un par un)
+   dans la zone de depot.
+3. Attends la fin du deploiement.
+
+Sur ton telephone
+-----------------
+- Ouvre l'adresse du site dans le navigateur (pas l'icone de l'ecran d'accueil).
+- Menu compte en haut a droite : la carte "Etat de l'app" doit afficher version 3.5
+  et "images trouvees".
+- Si une ancienne version s'affiche encore, appuie sur "Forcer la mise a jour".
+- Supprime puis re-ajoute l'icone sur l'ecran d'accueil pour recuperer la nouvelle icone.
+
+Rappel
+------
+Le compte de connexion est le meme que Cookie Do. Il sert a synchroniser tes seances
+entre appareils et a afficher tes repas de la semaine sur l'ecran Aujourd'hui.
