@@ -1,5 +1,5 @@
-/* Nexora - cache hors ligne (v6). Depose ce fichier a cote de index.html. */
-const CACHE='nexora-v6';
+/* Nexora - cache hors ligne (v7). Depose ce fichier a cote de index.html. */
+const CACHE='nexora-v7';
 
 self.addEventListener('install',e=>{self.skipWaiting()});
 self.addEventListener('activate',e=>{
