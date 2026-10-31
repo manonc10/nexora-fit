@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Nexora</title>
-<meta name="theme-color" content="#F6F6F8">
+<meta name="theme-color" content="#F7F6F3">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Nexora">
@@ -14,38 +14,40 @@
 <link rel="manifest" href="manifest.webmanifest">
 <style>
 :root{
-  --acc:#1569C2; --acc-dk:#1565c0; --acc-2:#64b5f6; --acc-wash:#e3f2fd; --acc-line:#bbdefb;
-  --ink:#16161A; --body:#3C3C43; --grey:#64646E; --faint:#6B6B75;
-  --paper:#F6F6F8; --paper-2:#EDEDF1; --card:#FFFFFF; --line:#E3E3E8; --line-soft:#EFEFF2;
-  --ok:#00897b; --ok-wash:#e0f2f1; --ok-dk:#00695c;
-  --run:#F26B2A; --run-dk:#C9501A; --run-wash:#FFF0E7; --run-line:#FFD3BC;
+  --acc:#1A1A1C; --acc-dk:#1A1A1C; --acc-2:#4A4A50; --acc-wash:#EEEDE8; --acc-line:#D9D7CF;
+  --ink:#1A1A1C; --body:#3C3C43; --grey:#66665F; --faint:#6F6F68;
+  --paper:#F7F6F3; --paper-2:#EEEDE8; --card:#FFFFFF; --line:#E4E2DB; --line-soft:#EEECE6;
+  --ok:#1F7A5A; --ok-wash:#E6F1EC; --ok-dk:#1A6549;
+  --run:#C8541C; --run-dk:#B04716; --run-wash:#FAEEE6; --run-line:#FFD3BC;
   --warn:#E08A24; --warn-wash:#FCF2E3;--warn-ink:#8A5200;
   --coral:#E0574F; --coral-wash:#FDEDEC;
   --gold:#B7861A; --gold-wash:#FBF4E2;
   --on:#FFFFFF;--accFg:#FFFFFF;
-  --mus:#C9C9D2; --mus-hi:#1e88e5; --mus-sec:#90caf9;
-  --fig:#1e88e5; --fig-far:#90caf9; --fig-ghost:#9A9AA4; --eq:#7A7A85; --eq-soft:#DEDEE4;
+  --mus:#C9C9D2; --mus-hi:#E8641F; --mus-sec:#F2B48F;
+  --fig:#34343A; --fig-far:#9A9A94; --fig-ghost:#9A9AA4; --eq:#7A7A85; --eq-soft:#DEDEE4;
   --sh-xs:0 1px 2px rgba(20,20,40,.05);
   --sh-sm:0 1px 3px rgba(20,20,40,.06),0 1px 2px rgba(20,20,40,.04);
-  --sh-md:0 6px 20px rgba(20,20,40,.09);
+  --sh-md:0 1px 2px rgba(0,0,0,.05);
   --sh-lg:0 16px 44px rgba(20,20,40,.16);
   --r-lg:22px; --r:16px; --r-sm:12px;
   --safe-top:env(safe-area-inset-top); --safe-bot:env(safe-area-inset-bottom);
-  --glass:rgba(246,246,248,.9); --illus-a:#FBFBFD; --illus-b:#F1F1F6;
+  --glass:rgba(247,246,243,.92); --illus-a:#FBFBFD; --illus-b:#F1F1F6;
+  --hero:#1A1A1C;
 }
 :root[data-theme="dark"]{
-  --acc:#64b5f6; --acc-dk:#90caf9;--accFg:#0B1F33; --acc-2:#1e88e5; --acc-wash:#102a43; --acc-line:#1c3f63;
-  --ink:#F3F3F6; --body:#D4D4DC; --grey:#9B9BA7; --faint:#9A9AA6;
-  --paper:#0F0F14; --paper-2:#1C1C24; --card:#17171E; --line:#2C2C36; --line-soft:#23232C;
-  --ok:#26a69a; --ok-wash:#0e2724; --ok-dk:#4db6ac;
-  --run:#FF8A4C; --run-dk:#FFA877; --run-wash:#2B1A10; --run-line:#5A3018;
+  --acc:#F2F1EC; --acc-dk:#F2F1EC;--accFg:#141416; --acc-2:#BDBDB6; --acc-wash:#26262A; --acc-line:#3A3A3F;
+  --ink:#F2F1EC; --body:#D4D4DC; --grey:#A3A39C; --faint:#9C9C95;
+  --paper:#0F0F11; --paper-2:#222226; --card:#18181B; --line:#2E2E33; --line-soft:#26262A;
+  --ok:#3FA98A; --ok-wash:#132720; --ok-dk:#5CC2A3;
+  --run:#E8834A; --run-dk:#F09A68; --run-wash:#2A1A10; --run-line:#5A3018;
   --warn:#E8A34A; --warn-wash:#2B2110;--warn-ink:#E8A34A; --coral-wash:#2C1715;
   --gold:#E0B44B; --gold-wash:#2A2313;
-  --mus:#3B3B47; --mus-hi:#64b5f6; --mus-sec:#2a4a75;
-  --fig:#64b5f6; --fig-far:#2f5687; --fig-ghost:#5C5C68; --eq:#8A8A96; --eq-soft:#2E2E39;
-  --glass:rgba(15,15,20,.9); --illus-a:#1B1B23; --illus-b:#15151B;
+  --mus:#3B3B47; --mus-hi:#E8834A; --mus-sec:#74452A;
+  --fig:#D8D8D2; --fig-far:#77776F; --fig-ghost:#5C5C68; --eq:#8A8A96; --eq-soft:#2E2E39;
+  --glass:rgba(15,15,17,.92); --illus-a:#1B1B23; --illus-b:#15151B;
   --sh-xs:0 1px 2px rgba(0,0,0,.3); --sh-sm:0 1px 3px rgba(0,0,0,.34);
   --sh-md:0 6px 20px rgba(0,0,0,.42); --sh-lg:0 16px 44px rgba(0,0,0,.55);
+  --hero:#26262B;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{height:100%}
@@ -520,6 +522,19 @@ main section.go-back:not(.hidden){animation:slideBack .26s cubic-bezier(.32,.72,
 .cx-l{margin-top:14px;font-weight:700}.cx-t{font-size:5rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1;margin:auto 0 8px}.cx-m{font-size:1.8rem;font-weight:800;line-height:1.15;margin-bottom:auto}.cx-nx{font-size:.92rem;margin-bottom:12px}.cx-b{display:flex;gap:9px}.cx-p{width:58px;border-radius:14px;background:rgba(0,0,0,.2);color:#fff;display:flex;align-items:center;justify-content:center}.cx-d{flex:1;min-height:58px;border-radius:14px;background:#fff;color:#B8481A;font-weight:800;font-size:1.05rem}
 .cx-end{display:flex;flex-direction:column;flex:1;justify-content:center;gap:6px}.cx-rec{display:flex;align-items:center;justify-content:center;gap:7px;font-weight:800}.cx-t2{font-size:4.6rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}.cx-sub{opacity:.92}.cx-past{margin:18px 0 22px;background:rgba(0,0,0,.16);border-radius:14px;padding:6px 14px}.cx-past div{display:flex;justify-content:space-between;padding:7px 0;font-variant-numeric:tabular-nums}.cx-end .cx-d{flex:0 0 auto}
 .repc{display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line-soft);border-radius:16px;padding:10px 8px 10px 14px}.repb{flex:1;min-width:0;text-align:left;display:flex;flex-direction:column;gap:1px}.repb b{color:var(--ink);font-size:.98rem}.repb small{color:var(--ok-dk);font-weight:700}
+.btn,.btn.ok,.btn.run{background:var(--acc);color:var(--accFg);font-weight:700;border-radius:12px;box-shadow:none}
+.btn.ghost,.btn.grey{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.sess{border-radius:16px;box-shadow:none;border:1px solid var(--line)}
+.sess .sess-h,.sess.run .sess-h,.sess.restday .sess-h,.sess.weekok .sess-h,:root[data-theme="dark"] .sess-h,:root[data-theme="dark"] .sess.run .sess-h,:root[data-theme="dark"] .sess.restday .sess-h{background:var(--card);color:var(--ink);border-bottom:1px solid var(--line-soft)}
+.sess-h .k{color:var(--grey);opacity:1;letter-spacing:.06em}.sess.run .sess-h .k{color:var(--run-dk)}.sess-h .m{color:var(--grey);opacity:1}.sess-h .more{background:var(--paper-2);color:var(--ink)}
+.chip{border-radius:10px}.avbtn{background:var(--paper-2);color:var(--ink)}
+.goal,.card,.tile,.exc,.prow,.repc{box-shadow:none;border:1px solid var(--line);border-radius:14px}
+.tile .ring{color:var(--ink)}.ti.fl,.ti.gl,.cbx{background:var(--paper-2);color:var(--ink)}
+.run-hero,.run-hero.z-course{background:var(--hero)!important}.run-hero.z-vite{background:#9C2F22!important}.run-hero.z-recup{background:#3D5166!important}.run-hero.z-facile{background:#2E5E50!important}.run-hero.z-soutenu{background:#8A5A1E!important}
+#circ{background:var(--hero)}.cx-d{color:#1A1A1C}.cx-tk i.cur{opacity:1}
+.rb-tr i{background:#fff}
+.cele,.cele.run{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.cele .s,.cele .big{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -857,7 +872,7 @@ const load=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}
 const save=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
 const drop=k=>{try{localStorage.removeItem(k)}catch(e){}};
 const ico=(n,c)=>`<svg class="ic ${c||''}"><use href="#i-${n}"/></svg>`;
-const APP_VERSION='5.1';
+const APP_VERSION='5.2';
 /* Photos d'exercices : img/<identifiant>.jpg a cote du HTML, sinon schema vectoriel.
    img/manifest.json (tableau de noms) est facultatif. */
 const IMG_DIR='img/';
@@ -919,7 +934,7 @@ let theme=load('nx_theme','auto');
 function applyTheme(){
   const dark=theme==='dark'||(theme==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
   document.documentElement.setAttribute('data-theme',dark?'dark':'light');
-  const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',dark?'#0F0F14':'#F6F6F8');
+  const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',dark?'#0F0F11':'#F7F6F3');
 }
 function setTheme(t){theme=t;save('nx_theme',t);applyTheme()}
 applyTheme();
@@ -2365,8 +2380,8 @@ function mergeData(d,updatedAt){let added=0;
 function shareCard(l){
   const S=2,W2=540*S,H2=675*S,c=document.createElement('canvas');c.width=W2;c.height=H2;const x=c.getContext('2d');
   const run=l.kind==='run';
-  const gr=x.createLinearGradient(0,0,W2,H2);gr.addColorStop(0,run?'#C9501A':'#1565c0');gr.addColorStop(1,run?'#FF8A4C':'#42a5f5');
-  x.fillStyle=gr;x.fillRect(0,0,W2,H2);x.fillStyle='rgba(255,255,255,.13)';
+  const gr=x.createLinearGradient(0,0,W2,H2);gr.addColorStop(0,'#1A1A1C');gr.addColorStop(1,'#1A1A1C');
+  x.fillStyle=gr;x.fillRect(0,0,W2,H2);x.fillStyle='rgba(255,255,255,.04)';
   [[80,120,220],[470,560,260]].forEach(([cx,cy,r])=>{x.beginPath();x.arc(cx*S,cy*S,r*S,0,7);x.fill()});
   const F=(w,s)=>`${w} ${s*S}px -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif`;
   x.fillStyle='#fff';x.font=F('800',26);x.fillText('NEXORA',44*S,72*S);
