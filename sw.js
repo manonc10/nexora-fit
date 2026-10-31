@@ -4,7 +4,7 @@
    reçoit {type:'updated'} pour afficher « Nouvelle version disponible ».
    Images et autres fichiers : cache d'abord (immuables une fois déposés).
    Supabase passe toujours par le réseau. */
-const CACHE='nexora-v14';
+const CACHE='nexora-v15';
 const SHELL=['./','./index.html','./manifest.webmanifest','./apple-touch-icon.png','./favicon.png','./icon-192.png','./icon-512.png','./icon-maskable-512.png'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL).catch(()=>null)).then(()=>self.skipWaiting()));
